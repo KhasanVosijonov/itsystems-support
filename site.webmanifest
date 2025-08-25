@@ -1,0 +1,15 @@
+{
+  "name": "IT Systems Ltd \u2014 Support",
+  "short_name": "Support",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0b1220",
+  "theme_color": "#0ea5e9",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "64x64",
+      "type": "image/svg+xml"
+    }
+  ]
+}

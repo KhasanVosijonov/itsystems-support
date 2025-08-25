@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>IT Systems Ltd — Support</title>
+  <meta name="description" content="Support hub for Microsoft 365, Copilot, Teams, and Azure customers. Contact IT Systems Ltd for help, admin requests, and troubleshooting.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="assets/site.webmanifest">
+  <style>
+    :root {
+      --bg: #0b1220;
+      --card: #121a2a;
+      --muted: #cbd5e1;
+      --text: #e2e8f0;
+      --brand1: #4F46E5;
+      --brand2: #06B6D4;
+      --ok: #10b981;
+      --warn: #f59e0b;
+      --err: #ef4444;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --radius: 16px;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: radial-gradient(1200px 600px at 20% 10%, rgba(79,70,229,.25), transparent 60%), var(--bg); color: var(--text); font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, Apple Color Emoji, Segoe UI Emoji; }
+    a { color: #7dd3fc; }
+    header { max-width: 1100px; margin: 32px auto 0; padding: 0 20px; display: flex; align-items: center; gap: 16px; }
+    header img { height: 56px; width: auto; }
+    .title { font-weight: 800; font-size: clamp(22px, 3vw, 28px); letter-spacing: .2px; }
+    main { max-width: 1100px; margin: 24px auto 80px; padding: 0 20px; display: grid; grid-template-columns: 1.25fr .9fr; gap: 24px; }
+    @media (max-width: 980px) { main { grid-template-columns: 1fr; } }
+    .card { background: linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.01)); border: 1px solid rgba(148,163,184,.15); border-radius: var(--radius); box-shadow: var(--shadow); }
+    .hero { grid-column: 1/-1; display: grid; grid-template-columns: 1.1fr .9fr; gap: 24px; padding: 24px; }
+    @media (max-width: 980px) { .hero { grid-template-columns: 1fr; } }
+    .hero h1 { margin: 0 0 8px; font-size: clamp(26px, 4.5vw, 40px); }
+    .hero p { margin: 0; color: var(--muted); line-height: 1.6; }
+    .badge { display: inline-flex; gap: 8px; align-items: center; background: rgba(14,165,233,.12); color: #7dd3fc; border: 1px solid rgba(125,211,252,.3); padding: 6px 10px; border-radius: 999px; font-size: 13px; font-weight: 600; }
+    .grid { display: grid; gap: 16px; }
+    .section { padding: 20px 24px; }
+    .section h2 { margin: 0 0 6px; font-size: 18px; }
+    .section p, .section li { color: var(--muted); line-height: 1.6; }
+    .list { margin: 8px 0 0 18px; }
+    .contact-block a { text-decoration: none; }
+    .contact-block .row { display: flex; gap: 8px; align-items: center; margin: 8px 0; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 12px 16px; font-weight: 700; border-radius: 12px; border: 1px solid rgba(148,163,184,.2); background: linear-gradient(180deg, rgba(79,70,229,.25), rgba(6,182,212,.2)); color: white; cursor: pointer; transition: transform .06s ease; }
+    .btn:hover { transform: translateY(-1px); }
+    form { display: grid; gap: 12px; }
+    input, textarea { width: 100%; padding: 12px 14px; border-radius: 12px; border: 1px solid rgba(148,163,184,.25); background: #0f172a; color: var(--text); }
+    textarea { min-height: 140px; resize: vertical; }
+    .note { font-size: 12px; color: var(--muted); }
+    .status { margin-top: 6px; font-size: 13px; font-weight: 600; }
+    .ok { color: var(--ok); }
+    .warn { color: var(--warn); }
+    .err { color: var(--err); }
+    footer { max-width: 1100px; margin: 20px auto 40px; padding: 0 20px; color: var(--muted); }
+    .kpi { display:grid; grid-template-columns: repeat(3,1fr); gap: 12px; }
+    .kpi .tile { padding:14px; text-align:center; border:1px dashed rgba(148,163,184,.25); border-radius:12px; }
+    @media (max-width: 700px) { .kpi { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="assets/logo.svg" alt="IT Systems Ltd logo">
+    <div class="title">IT Systems Ltd — Support</div>
+  </header>
+
+  <main>
+    <section class="hero card">
+      <div class="section">
+        <span class="badge">Microsoft 365 • Copilot • Azure</span>
+        <h1>Fast, human help for your Microsoft cloud</h1>
+        <p>Raise a ticket, request license changes, or get expert guidance. We support Microsoft 365, Copilot, Teams, SharePoint, Exchange, and Azure. UK business hours with clear SLAs and escalations.</p>
+        <div style="margin-top:16px; display:flex; gap:12px; flex-wrap:wrap;">
+          <a class="btn" href="#contact">Contact Support</a>
+          <a class="btn" href="#faq">Read FAQs</a>
+        </div>
+        <div class="kpi" style="margin-top:16px;">
+          <div class="tile"><div class="note">Response Target</div><div><strong>≤ 4 business hours</strong></div></div>
+          <div class="tile"><div class="note">Resolution Target</div><div><strong>≤ 2 business days</strong></div></div>
+          <div class="tile"><div class="note">Coverage</div><div><strong>Mon–Fri, 09:00–18:00 (UK)</strong></div></div>
+        </div>
+      </div>
+      <div class="section contact-block card" style="background:linear-gradient(180deg, rgba(79,70,229,.15), rgba(6,182,212,.10));">
+        <h2>Contact</h2>
+        <div class="row">📧 <a href="mailto:support@itsystems.ltd?subject=Support%20request">support@itsystems.ltd</a></div>
+        <div class="row">📞 <a href="tel:+447541555001">+44 7541 555001</a></div>
+        <div class="row">🕑 Mon–Fri, 09:00–18:00 (UK)</div>
+        <div class="row">🧭 Timezone: Europe/London</div>
+        <p class="note">Prefer email for a ticket number. Phone is best for urgent incidents.</p>
+        <a class="btn" href="mailto:support@itsystems.ltd?subject=Support%20request">Email Support</a>
+      </div>
+    </section>
+
+    <section id="contact" class="card section">
+      <h2>Raise a ticket</h2>
+      <p>Use the form below. We’ll email you a confirmation and reference number once received.</p>
+      <form id="supportForm" novalidate>
+        <input type="text" name="name" placeholder="Your name" required>
+        <input type="email" name="email" placeholder="Your email" required>
+        <input type="text" name="subject" placeholder="Subject" required>
+        <textarea name="message" placeholder="Describe the issue or request…" required></textarea>
+        <input type="hidden" name="source" value="support.itsystems.ltd">
+        <button class="btn" type="submit">Submit ticket</button>
+        <div id="status" class="status"></div>
+        <p class="note">No portal login needed. Your message is sent securely. We never share your data with third parties.</p>
+      </form>
+      <p class="note">No backend yet? This form will open your email client if the API isn’t configured.</p>
+    </section>
+
+    <section id="faq" class="card section">
+      <h2>FAQs</h2>
+      <ul class="list">
+        <li><strong>What can you help with?</strong> Microsoft 365, Copilot, Teams, SharePoint, Outlook, Exchange Online, user/admin requests, and Azure basics.</li>
+        <li><strong>How fast do you respond?</strong> We aim to acknowledge within 4 business hours and resolve most issues within 2 business days.</li>
+        <li><strong>Emergency?</strong> Call +44 7541 555001. For major incidents we prioritise phone over email.</li>
+        <li><strong>Security?</strong> We enforce MFA on admin operations and never ask for your password.</li>
+      </ul>
+    </section>
+
+    <section class="card section">
+      <h2>Service Levels</h2>
+      <ul class="list">
+        <li>Acknowledgement: ≤ 4 business hours</li>
+        <li>Standard resolution: ≤ 2 business days</li>
+        <li>Critical incident: immediate triage by phone</li>
+      </ul>
+      <p class="note">Targets are not guarantees; complex issues may require more time. We’ll keep you updated.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 IT Systems Ltd. All rights reserved.</p>
+    <p class="note">This site is for customers of IT Systems Ltd. Microsoft 365, Azure and Copilot are trademarks of Microsoft.</p>
+  </footer>
+
+  <script>
+    // Minimal JS: tries to POST to a webhook endpoint (Logic Apps / Power Automate).
+    // If not configured, falls back to mailto.
+    const FORM_ENDPOINT = ""; // e.g., "https://prod-00.westeurope.logic.azure.com:443/workflows/...."
+
+    const form = document.getElementById('supportForm');
+    const statusEl = document.getElementById('status');
+
+    function showStatus(cls, msg) {
+      statusEl.className = 'status ' + cls;
+      statusEl.textContent = msg;
+    }
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const data = Object.fromEntries(new FormData(form).entries());
+
+      if (!FORM_ENDPOINT) {
+        // Fallback: open mail client
+        const body = encodeURIComponent(`Name: ${data.name}%0AEmail: ${data.email}%0ASubject: ${data.subject}%0A%0A${data.message}`);
+        window.location.href = `mailto:support@itsystems.ltd?subject=${encodeURIComponent('[Ticket] ' + data.subject)}&body=${body}`;
+        showStatus('ok', 'Opening your email client…');
+        return;
+      }
+
+      try {
+        showStatus('warn', 'Sending…');
+        const res = await fetch(FORM_ENDPOINT, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data)
+        });
+        if (res.ok) {
+          form.reset();
+          showStatus('ok', 'Ticket submitted. Check your email for confirmation.');
+        } else {
+          showStatus('err', 'Could not submit via API. Try email instead.');
+        }
+      } catch (err) {
+        showStatus('err', 'Network error. Try email: support@itsystems.ltd.');
+      }
+    });
+  </script>
+</body>
+</html>
